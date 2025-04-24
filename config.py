@@ -26,20 +26,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "21655449")
-    API_HASH  = os.environ.get("API_HASH", "112be9974e163f6dbd645ce4b94f4e6a")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6782811930:AAFDqkELEVJeGGlTbI5tavrac7RfZ7-Qzw4") 
+    API_ID    = os.environ.get("API_ID", "27624625")
+    API_HASH  = os.environ.get("API_HASH", "5a5c96944e5c1efd57690915cfd18971")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7809311794:AAEXbIDhID9yrI04PSEVLsQJQNBuOvt3UzU") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","Cluster0")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","tirokaitube")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://tirokaitube:ymDe3VLWXQ05JazI@cluster0.tktl52k.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1229852181').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "team_netflix") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
+    START_PIC   = os.environ.get("START_PIC", "https://i.ibb.co/PvHsTVXC/x.jpg")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5953621837').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "Anime_Lumino") 
+    LOG_CHANNEL = int(os.environ.get("-1002568229104", None))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
@@ -54,13 +54,13 @@ class Txt(object):
 ➻ Yᴏᴜ Cᴀɴ Aʟsᴏ Cᴏɴᴠᴇʀᴛ Vɪᴅᴇᴏ Tᴏ Fɪʟᴇ & Fɪʟᴇ Tᴏ Vɪᴅᴇᴏ.
 ➻ Tʜɪs Bᴏᴛ Aʟꜱᴏ Sᴜᴘᴘᴏʀᴛs Cᴜsᴛᴏᴍ Tʜᴜᴍʙɴᴀɪʟ Aɴᴅ Cᴜsᴛᴏᴍ Cᴀᴘᴛɪᴏɴ.
 
-💺 Tʜɪs Bᴏᴛ Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ : @Codeflix_Bots 💞</b>"""
+💺 Tʜɪs Bᴏᴛ Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ : @Anime_Lumino 💞</b>"""
 
     ILLEGAL_TXT = """<b>ʜᴇʀᴇ ɪꜱ ᴏᴜʀ ᴀʟʟ ʙᴏᴛ ʟɪꜱᴛ</b>"""
     
     ABOUT_TXT = """<b>╭───────────⍟
 ├🤖 ᴍy ɴᴀᴍᴇ : {}
-├🖥️ Dᴇᴠᴇʟᴏᴩᴇʀꜱ : <a href=https://t.me/codeflix_bots>**ᴄᴏᴅᴇғʟɪx ʙᴏᴛs**</a> 🕷
+├🖥️ Dᴇᴠᴇʟᴏᴩᴇʀꜱ : <a href=https://t.me/Anime_Lumino>**ᴄᴏᴅᴇғʟɪx ʙᴏᴛs**</a> 🕷
 ├👨‍💻 Pʀᴏɢʀᴀᴍᴇʀ : **ᴍɪᴋᴇʏ**
 ╰───────────────⍟ </b>"""
 
@@ -90,7 +90,7 @@ Exᴀᴍᴩʟᴇ:- /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 
 #⚠️ Dᴏɴ'ᴛ Rᴇᴍᴏᴠᴇ Oᴜʀ Cʀᴇᴅɪᴛꜱ https://github.com/Codeflix-Bots🙏🥲
     DEV_TXT = """<b><u>Sᴩᴇᴄɪᴀʟ Tʜᴀɴᴋꜱ & Dᴇᴠᴇʟᴏᴩᴇʀꜱ</b></u>
-»<a href=https://t.me/codeflix_bots>**Codeflix bots**</a>🕷
+»<a href=https://t.me/Anime_Lumino>**Anime_Lumino bots**</a>🕷
 »**Kunal Singh ♡**"""
 
     PROGRESS_BAR = """<b>\n
